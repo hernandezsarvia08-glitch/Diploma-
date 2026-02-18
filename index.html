@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sertificado Oficial del Amor 💖</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fbc8d4, #fef3f7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Playfair Display', serif;
+}
+
+.sertificado {
+  background: #fff;
+  border: 10px solid #d81b60;
+  border-radius: 25px;
+  padding: 50px 60px;
+  max-width: 750px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 40px rgba(216,27,96,0.3);
+}
+
+.decoracion {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+}
+
+.titulo {
+  font-size: 42px;
+  color: #c2185b;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.subtitulo {
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.texto {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.nombre {
+  font-family: 'Great Vibes', cursive;
+  font-size: 52px;
+  color: #d81b60;
+  margin: 20px 0;
+}
+
+.firma {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.firma img {
+  height: 160px;   /* FIRMA GRANDE */
+  width: auto;
+}
+
+.firma-texto {
+  text-align: right;
+  font-size: 18px;
+}
+
+.sello {
+  position: absolute;
+  bottom: -35px;
+  right: -35px;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle at top left, #ff5f8f, #ad1457);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  transform: rotate(12deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  border: 5px solid #fff;
+}
+
+.sello span {
+  text-align: center;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sertificado">
+  <div class="decoracion">💖</div>
+
+  <div class="titulo">SERTIFICADO OFICIAL </div>
+  <div class="subtitulo">Documento romántico de validez infinita</div>
+
+  <div class="texto">
+    Por medio del presente sertificado se deja constancia formal de que la señorita:
+  </div>
+
+  <div class="nombre">
+    Julia Fernanda Nohemí
+  </div>
+
+  <div class="texto">
+    Ha sido declarada de manera legítima, exclusiva e irrevocable  
+    No solo por ser la niña mas hermosa, guapa, linda y tierna sino tambien como la dueña absoluta de mi corazón, mis pensamientos  
+    y mis sentimientos más sinceros.
+    <br><br>
+    Este sertificado entra en vigencia desde el momento  
+    en que ella sonría al leerlo, y tendrá validez eterna.
+  </div>
+
+  <div class="firma">
+    <div>
+      Fecha: <span id="fecha"></span>
+    </div>
+
+    <div class="firma-texto">
+      Firmado solemnemente por:<br>
+      <strong>Luis Flores</strong><br>
+      <img src="firma.png" alt="Firma">
+    </div>
+  </div>
+
+  <div class="sello">
+    <span>AMOR<br>VERDADERO</span>
+  </div>
+</div>
+
+<script>
+  const hoy = new Date();
+  document.getElementById("fecha").innerText = hoy.toLocaleDateString();
+</script>
+
+</body>
+</html>
